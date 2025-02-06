@@ -1,0 +1,29 @@
+/* Container to hold the marquee */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* The element that will be scrolled */
+  .marquee {
+    display: flex; /* Ensures logos are in a row */
+    animation: marquee 200s linear infinite; /* Adjust duration as needed */
+  }
+  
+  /* Keyframes for the animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0); /* Start scrolling from the left edge */
+    }
+    100% {
+      transform: translateX(-2000%); /* Scroll to the left infinitely */
+    }
+  }
+  
+  /* Style for the logos */
+  .marquee img {
+    height: 50px; /* Adjust height of logos */
+    margin-right: 20px; /* Space between logos */
+  }
+  
